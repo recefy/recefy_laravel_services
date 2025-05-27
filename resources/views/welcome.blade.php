@@ -358,7 +358,7 @@
             </div>
             <div class="slogan">
                 <a href="/">
-                    <h1>ReceFy</h1>
+                    <h1>ReceFy.com</h1>
                 </a>
             </div>
         </div>
