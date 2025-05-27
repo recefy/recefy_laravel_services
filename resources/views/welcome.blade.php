@@ -347,7 +347,6 @@
         <div class="encabezado">
             <div class="logo">
                 <a href="/" class="back-button">
-                    <i class="bi bi-arrow-left-short"></i>
                     <h1>RC</h1>
                 </a>
             </div>
