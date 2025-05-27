@@ -347,6 +347,7 @@
         <div class="encabezado">
             <div class="logo">
                 <a href="/" class="back-button">
+                    <i class="bi bi-arrow-left-short"></i>
                     <h1>RC</h1>
                 </a>
             </div>
@@ -357,18 +358,20 @@
             </div>
             <div class="slogan">
                 <a href="/">
-                    <h1>ReceFy.com</h1>
+                    <h1>ReceFy</h1>
                 </a>
             </div>
         </div>
     </header>
 
+    <!-- Contenido principal -->
     <main>
         <div class="container">
             <div class="contenido">
                 <i class="fa-solid fa-gear"></i>
-                <h2>Estamos Trabajando para Ti </h2>
-                <p>¡ Ups no estamos en Activos Por el Momento  !</p>
+                <h1>ReceFy</h1>
+                <h2>Error 404</h2>
+                <p>¡ Este sitio no se encuentra Activo Por el Momento !</p>
             </div>
         </div>
     </main>
