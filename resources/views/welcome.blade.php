@@ -363,14 +363,12 @@
         </div>
     </header>
 
-    <!-- Contenido principal -->
     <main>
         <div class="container">
             <div class="contenido">
                 <i class="fa-solid fa-gear"></i>
-                <!-- <h1>ReceFy</h1> -->
-                <h2>Error 404</h2>
-                <p>¡ Este sitio no se encuentra Activo Por el Momento !</p>
+                <h2>Estamos Trabajando para Ti </h2>
+                <p>¡ Ups no estamos en Activos Por el Momento  !</p>
             </div>
         </div>
     </main>
