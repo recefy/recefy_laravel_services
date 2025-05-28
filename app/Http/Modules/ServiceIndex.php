@@ -2,10 +2,4 @@
 
 namespace App\Http\Modules;
 
-class ServiceIndex 
-{
-    public function InteroperabilidadDataRecetas(){
-            
-        
-    } 
-}
+class ServiceIndex {}

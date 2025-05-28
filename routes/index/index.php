@@ -6,5 +6,7 @@ use App\Http\Modules\ControllersIndex;
 Route::prefix('index')->group(function () {
     Route::controller(ControllersIndex::class)->group(function () {
         Route::get('/','index');
+        Route::post('crear-cuenta','crearCuenta');
+
     });
 });
