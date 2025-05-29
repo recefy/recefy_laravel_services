@@ -44,13 +44,17 @@ class ControllersIndex extends Controller
 
             $tokenResult = $user->createToken('session_token');
             $token = $tokenResult->token;
-            $token->expires_at = Carbon::now()->addDays(1);
+            $token->expires_at = Carbon::now()->addDay();
             $token->save();
 
             return response()->json([
                 'message' => 'Cuenta creada correctamente',
-                'token' => $tokenResult->accessToken,
-                'usuario' => $user
+                'data' => [
+                    'user' => $user,
+                    'access_token' => $tokenResult->accessToken,
+                    'token_type' => 'Bearer',
+                    'expires_at' => $token->expires_at->toDateTimeString()
+                ]
             ], 201);
         } catch (\Throwable $th) {
             return response()->json(['message' => $th->getMessage()], 400);
