@@ -3,6 +3,7 @@
 namespace App\Http\Modules;
 
 use App\Http\Controllers\Controller;
+use App\Http\Modules\RequestsGlobal\CrearUsuarioRequest;
 use Illuminate\Http\Request;
 use App\Http\Modules\ServiceIndex;
 use App\Models\User;
@@ -12,6 +13,7 @@ use Illuminate\Support\Facades\Hash;
 
 class ControllersIndex extends Controller
 {
+
 
     public function __construct(protected ServiceIndex $serviceIndex) {}
 
@@ -30,7 +32,7 @@ class ControllersIndex extends Controller
         }
     }
 
-    public function crearCuenta(Request $request)
+    public function crearCuenta(CrearUsuarioRequest $request)
     {
         try {
             $user = User::create([
@@ -51,7 +53,7 @@ class ControllersIndex extends Controller
                 'usuario' => $user
             ], 201);
         } catch (\Throwable $th) {
-            return response()->json(['message' => 'Ha ocurrido un error al crear el usuario'], 400);
+            return response()->json(['message' => $th->getMessage()], 400);
         }
     }
 }
